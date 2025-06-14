@@ -5,6 +5,7 @@ description = "The Bayesian Inference Gaussian Splatting (BIGS) library"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "ninja>=1.11.1.4",
     "pytest>=8.4.0",
     "torch>=2.7.1",
     "torchvision>=0.22.1",
@@ -23,6 +24,7 @@ torch = [
 torchvision = [
   { index = "pytorch-cu126", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
 ]
+
 
 [tool.ruff]
 lint.ignore = ["ALL"]

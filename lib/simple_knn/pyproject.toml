@@ -1,0 +1,16 @@
+[project]
+name = "simple-knn"
+version = "0.1.0"
+dependencies = [
+    "torch>=1.9.0",
+    "numpy>=1.19.0",
+]
+
+[build-system]
+requires = [
+    "setuptools>=61.0", 
+    "wheel",
+    "torch>=1.9.0",  # Add torch as build dependency
+    "numpy>=1.19.0"  # Often needed too
+]
+build-backend = "setuptools.build_meta"

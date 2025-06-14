@@ -8,3 +8,23 @@ wheels/
 
 # Virtual environments
 .venv
+/build
+/bin
+.xmake
+.cache
+.venv
+__pycache__
+.pytest_cache
+output
+eval
+config.json
+/dist
+/core
+/data
+vsxmake2022
+compile_commands.json
+/screenshot.png 
+/imgui.ini
+*.egg-info
+*.png
+/color_embedding

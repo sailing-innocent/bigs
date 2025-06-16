@@ -1,0 +1,44 @@
+{
+    "scene_name": "mip360_kitchen",
+    "ply_path": "data/pretrained/gaussian/mip360_kitchen_30000.ply",
+    "world_name": "colmap",
+    "project_home": "data/mid/gsd",
+    "use_dataset": false,
+    "dataset_path": "data/datasets/mip360/kitchen",
+    "white_background": true,
+    "cam_path": {
+        "v_width": 1920,
+        "v_height": 1080,
+        "rot_axis": [
+            0,
+            -1,
+            -1
+        ],
+        "eye_fix_point": [
+            0,
+            1,
+            1
+        ],
+        "rot_center_point": [
+            0,
+            0,
+            0
+        ],
+        "start_theta": 0.0,
+        "scale": 2.0
+    },
+    "annotations": [
+        {
+            "frame_idx": 0,
+            "points": [
+                [
+                    0.4,
+                    0.55
+                ]
+            ],
+            "labels": [
+                1
+            ]
+        }
+    ]
+}

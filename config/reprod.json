@@ -1,0 +1,65 @@
+{
+    "nerf_blender_lego": {
+        "ply_path": "data/pretrained/gaussian/nerf_blender_lego_30000.ply",
+        "demo": {
+            "pos": [-2, -2, 2],
+            "target": [0, 0, 0]
+        },
+        "world": "blender",
+        "white_background": true
+    },
+    "nerf_blender_chair": {
+        "ply_path": "data/pretrained/gaussian/nerf_blender_chair_30000.ply",
+        "demo": {
+            "pos": [-2, -2, 2],
+            "target": [0, 0, 0]
+        },
+        "world": "blender",
+        "white_background": true
+    },
+    "nerf_blender_hotdog": {
+        "ply_path": "data/pretrained/gaussian/nerf_blender_hotdog_30000.ply",
+        "demo": {
+            "pos": [-2, -2, 2],
+            "target": [0, 0, 0]
+        },
+        "world": "blender",
+        "white_background": true
+    },
+    "nerf_blender_ship": {
+        "ply_path": "data/pretrained/gaussian/nerf_blender_ship_30000.ply",
+        "demo": {
+            "pos": [-2, -2, 2],
+            "target": [0, 0, 0]
+        },
+        "world": "blender",
+        "white_background": true
+    },
+    "nerf_blender_mic": {
+        "ply_path": "data/pretrained/gaussian/nerf_blender_mic_30000.ply",
+        "demo": {
+            "pos": [-2, -2, 2],
+            "target": [0, 0, 0]
+        },
+        "world": "blender",
+        "white_background": true
+    },
+    "nerf_blender_ficus": {
+        "ply_path": "data/pretrained/gaussian/nerf_blender_ficus_30000.ply",
+        "demo": {
+            "pos": [-2, -2, 2],
+            "target": [0, 0, 0]
+        },
+        "world": "blender",
+        "white_background": true
+    },
+    "nerf_blender_materials": {
+        "ply_path": "data/pretrained/gaussian/nerf_blender_materials_30000.ply",
+        "demo": {
+            "pos": [-2, -2, 2],
+            "target": [0, 0, 0]
+        },
+        "world": "blender",
+        "white_background": true
+    }
+}

@@ -5,10 +5,14 @@ description = "The Bayesian Inference Gaussian Splatting (BIGS) library"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "matplotlib>=3.10.3",
     "ninja>=1.11.1.4",
+    "opencv-python>=4.11.0.86",
+    "plyfile>=1.1.2",
     "pytest>=8.4.0",
     "torch>=2.7.1",
     "torchvision>=0.22.1",
+    "tqdm>=4.67.1",
 ]
 
 

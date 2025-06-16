@@ -1,0 +1,233 @@
+{
+    "llff_dataset_root": "data/datasets/llff/",
+    "nvos_dataset_root": "data/datasets/nvos/llff/",
+    "project_home": "data/mid/gsd",
+    "horns_center": {
+        "scene_name": "horns",
+        "ply_path": "data/mid/reprod/horns/point_cloud/iteration_30000/point_cloud.ply",
+        "gt_image_name": "DJI_20200223_163024_597",
+        "ref_image_name": "DJI_20200223_163055_437",
+        "result_dir": "data/mid/gsd/horns_center_crt_0.5_stride_1_radius_5_bb_0.0_var_0.2",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.3,
+                        0.35
+                    ],
+                    [
+                        0.55,
+                        0.55
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "horns_left": {
+        "scene_name": "horns",
+        "ply_path": "data/mid/reprod/horns/point_cloud/iteration_30000/point_cloud.ply",
+        "gt_image_name": "DJI_20200223_163024_597",
+        "ref_image_name": "DJI_20200223_163055_437",
+        "result_dir": "data/mid/gsd/horns_left_crt_0.5_stride_1_radius_0_bb_0.0_var_0.2",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.05,
+                        0.55
+                    ]
+                ],
+                "labels": [
+                    1
+                ]
+            }
+        ]
+    },
+    "fern": {
+        "scene_name": "fern",
+        "ply_path": "data/mid/reprod/fern/point_cloud/iteration_30000/point_cloud.ply",
+        "gt_image_name": "IMG_4027",
+        "ref_image_name": "IMG_4038",
+        "result_dir": "data/mid/gsd/fern_crt_0.5_stride_1_radius_0_bb_0.0_var_0.2",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.3,
+                        0.35
+                    ],
+                    [
+                        0.6,
+                        0.55
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "flower": {
+        "scene_name": "flower",
+        "ply_path": "data/mid/reprod/flower/point_cloud/iteration_30000/point_cloud.ply",
+        "gt_image_name": "IMG_2962",
+        "ref_image_name": "IMG_2983",
+        "result_dir": "data/mid/gsd/flower_crt_0.5_stride_1_radius_0_bb_0.0_var_0.2",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.6,
+                        0.45
+                    ],
+                    [
+                        0.8,
+                        0.55
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "fortress": {
+        "scene_name": "fortress",
+        "ply_path": "data/mid/reprod/fortress/point_cloud/iteration_30000/point_cloud.ply",
+        "gt_image_name": "IMG_1800",
+        "ref_image_name": "IMG_1821",
+        "result_dir": "data/mid/gsd/fortress_crt_0.5_stride_1_radius_0_bb_0.0_var_0.2",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.6,
+                        0.45
+                    ],
+                    [
+                        0.7,
+                        0.55
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "leaves": {
+        "scene_name": "leaves",
+        "ply_path": "data/mid/reprod/leaves/point_cloud/iteration_30000/point_cloud.ply",
+        "gt_image_name": "IMG_2997",
+        "ref_image_name": "IMG_3011",
+        "result_dir": "data/mid/gsd/leaves_crt_0.5_stride_1_radius_0_bb_0.0_var_0.2",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.65,
+                        0.9
+                    ],
+                    [
+                        0.7,
+                        0.85
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "orchids": {
+        "scene_name": "orchids",
+        "ply_path": "data/mid/reprod/orchids/point_cloud/iteration_30000/point_cloud.ply",
+        "gt_image_name": "IMG_4480",
+        "ref_image_name": "IMG_4479",
+        "result_dir": "data/mid/gsd/orchids_crt_0.5_stride_1_radius_0_bb_0.0_var_0.2",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.35,
+                        0.2
+                    ],
+                    [
+                        0.3,
+                        0.35
+                    ],
+                    [
+                        0.7,
+                        0.35
+                    ],
+                    [
+                        0.75,
+                        0.6
+                    ],
+                    [
+                        0.8,
+                        0.72
+                    ],
+                    [
+                        0.5,
+                        0.5
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1,
+                    1,
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "trex": {
+        "scene_name": "trex",
+        "ply_path": "data/mid/reprod/trex/point_cloud/iteration_30000/point_cloud.ply",
+        "gt_image_name": "DJI_20200223_163619_411",
+        "ref_image_name": "DJI_20200223_163607_906",
+        "result_dir": "data/mid/gsd/trex_crt_0.5_stride_1_radius_0_bb_0.0_var_0.2",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.3,
+                        0.4
+                    ],
+                    [
+                        0.6,
+                        0.55
+                    ],
+                    [
+                        0.85,
+                        0.7
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1,
+                    1
+                ]
+            }
+        ]
+    }
+}

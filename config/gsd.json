@@ -1,0 +1,285 @@
+{
+    "mip360_bicycle": {
+        "ply_path": "data/pretrained/gaussian/mip360_bicycle_30000.ply",
+        "world_name": "colmap",
+        "project_home": "data/mid/gsd",
+        "use_dataset": false,
+        "dataset_path": "data/datasets/mip360/bicycle",
+        "white_background": true,
+        "cam_config": {
+            "v_width": 1920,
+            "v_height": 1080,
+            "rot_axis": [
+                0,
+                -1,
+                0
+            ],
+            "eye_fix_point": [
+                0,
+                1,
+                1
+            ],
+            "rot_center_point": [
+                0,
+                0,
+                0
+            ],
+            "start_theta": 0.0,
+            "scale": 2.0
+        },
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.47,
+                        0.4
+                    ],
+                    [
+                        0.55,
+                        0.75
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "mip360_bonsai": {
+        "ply_path": "data/pretrained/gaussian/mip360_bonsai_30000.ply",
+        "world_name": "colmap",
+        "project_home": "data/mid/gsd",
+        "use_dataset": true,
+        "dataset_path": "data/datasets/mip360/bonsai",
+        "white_background": true,
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.65,
+                        0.25
+                    ],
+                    [
+                        0.6,
+                        0.4
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "mip360_counter": {
+        "ply_path": "data/pretrained/gaussian/mip360_counter_30000.ply",
+        "world_name": "colmap",
+        "project_home": "data/mid/gsd",
+        "use_dataset": false,
+        "dataset_path": "data/datasets/mip360/counter",
+        "white_background": true,
+        "cam_config": {
+            "v_width": 1920,
+            "v_height": 1080,
+            "rot_axis": [
+                0,
+                -1,
+                -1
+            ],
+            "eye_fix_point": [
+                0,
+                1,
+                1
+            ],
+            "rot_center_point": [
+                0,
+                0,
+                0
+            ],
+            "start_theta": 0.0,
+            "scale": 2.0
+        },
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.8,
+                        0.5
+                    ],
+                    [
+                        0.75,
+                        0.5
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "mip360_garden": {
+        "ply_path": "data/pretrained/gaussian/mip360_garden_30000.ply",
+        "world_name": "colmap",
+        "project_home": "data/mid/gsd",
+        "use_dataset": true,
+        "dataset_path": "data/datasets/mip360/garden",
+        "white_background": true,
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.5,
+                        0.4
+                    ],
+                    [
+                        0.5,
+                        0.3
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "mip360_kitchen": {
+        "ply_path": "data/pretrained/gaussian/mip360_kitchen_30000.ply",
+        "world_name": "colmap",
+        "project_home": "data/mid/gsd",
+        "use_dataset": false,
+        "dataset_path": "data/datasets/mip360/kitchen",
+        "white_background": true,
+        "cam_config": {
+            "v_width": 1920,
+            "v_height": 1080,
+            "rot_axis": [
+                0,
+                -1,
+                -1
+            ],
+            "eye_fix_point": [
+                0,
+                1,
+                1
+            ],
+            "rot_center_point": [
+                0,
+                0,
+                0
+            ],
+            "start_theta": 0.0,
+            "scale": 2.0
+        },
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.4,
+                        0.55
+                    ]
+                ],
+                "labels": [
+                    1
+                ]
+            }
+        ]
+    },
+    "tnt_truck": {
+        "ply_path": "data/mid/reprod/truck/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "colmap",
+        "project_home": "data/mid/gsd",
+        "white_background": true,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/tanksandtemples/truck/",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.3,
+                        0.55
+                    ],
+                    [
+                        0.8,
+                        0.55
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            },
+            {
+                "frame_idx": 28,
+                "points": [
+                    [
+                        0.3,
+                        0.55
+                    ],
+                    [
+                        0.1,
+                        0.8
+                    ]
+                ],
+                "labels": [
+                    1,
+                    1
+                ]
+            }
+        ]
+    },
+    "in2n_bear": {
+        "ply_path": "data/mid/reprod/bear/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "colmap",
+        "project_home": "data/mid/gsd",
+        "white_background": true,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/Gaussian-Grouping/data/bear",
+        "annotations": [
+            {
+                "frame_idx": 0,
+                "points": [
+                    [
+                        0.5,
+                        0.45
+                    ]
+                ],
+                "labels": [
+                    1
+                ]
+            }
+        ]
+    },
+    "figurines": {
+        "ply_path": "data/mid/reprod/figurines/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "lerf_mask",
+        "project_home": "data/mid/gsd",
+        "white_background": true,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/Gaussian-Grouping/data/lerf_mask/figurines"
+    },
+    "lm_teatime": {
+        "ply_path": "data/mid/reprod/teatime/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "lerf_mask",
+        "project_home": "data/mid/gsd",
+        "white_background": true,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/Gaussian-Grouping/data/lerf_mask/teatime"
+    },
+    "lm_ramen": {
+        "ply_path": "data/mid/reprod/ramen/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "lerf_mask",
+        "project_home": "data/mid/bigs",
+        "white_background": true,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/Gaussian-Grouping/data/lerf_mask/ramen"
+    }
+}

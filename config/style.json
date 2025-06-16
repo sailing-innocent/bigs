@@ -1,0 +1,18 @@
+{
+    "tt_truck": {
+        "ply_path": "data/mid/reprod/truck/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "colmap",
+        "project_home": "data/mid/bigs",
+        "white_background": false,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/tanksandtemples/truck"
+    },
+    "tt_train": {
+        "ply_path": "data/mid/reprod/train/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "colmap",
+        "project_home": "data/mid/bigs",
+        "white_background": false,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/tanksandtemples/train"
+    }
+}

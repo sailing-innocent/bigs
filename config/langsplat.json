@@ -1,0 +1,38 @@
+{
+    "lerf_ramen": {
+        "ply_path": "data/mid/reprod/ramen/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "lerf",
+        "project_home": "data/mid/bigs",
+        "white_background": false,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/lerf_ovs/ramen",
+        "gt_path": "data/datasets/lerf_ovs/label/ramen"
+    },
+    "lerf_teatime": {
+        "ply_path": "data/mid/reprod/teatime/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "lerf",
+        "project_home": "data/mid/bigs",
+        "white_background": false,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/lerf_ovs/teatime",
+        "gt_path": "data/datasets/lerf_ovs/label/teatime"
+    },
+    "lerf_waldo_kitchen": {
+        "ply_path": "data/mid/reprod/lerf_waldo_kitchen/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "lerf",
+        "project_home": "data/mid/bigs",
+        "white_background": false,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/lerf_ovs/waldo_kitchen",
+        "gt_path": "data/datasets/lerf_ovs/label/waldo_kitchen"
+    },
+    "lerf_figurines": {
+        "ply_path": "data/mid/reprod/lerf_figurines/point_cloud/iteration_30000/point_cloud.ply",
+        "world_name": "lerf",
+        "project_home": "data/mid/bigs",
+        "white_background": false,
+        "use_dataset": true,
+        "dataset_path": "data/datasets/lerf_ovs/figurines",
+        "gt_path": "data/datasets/lerf_ovs/label/figurines"
+    }
+}

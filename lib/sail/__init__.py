@@ -1,8 +1,11 @@
-import sys
-import os
+__all__ = ["sail", "__version__", "__doc__", "__name__", "add"]
 
-cur_dir = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(cur_dir, "bin/release"))
-print(sys.path)
+from .module import SailModule
 
-import sailc
+sail = SailModule.get_instance()
+# Attributes
+# __version__ = sailtorch["__version__"]
+# __doc__ = sailtorch["__doc__"]
+__name__ = "sail"
+# Functions
+add = sail("add")

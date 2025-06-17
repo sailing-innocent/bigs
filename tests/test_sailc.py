@@ -1,6 +1,6 @@
-from lib.sail import sailc
+import lib.sail as sail
 
 
-def test_sailc():
+def test_sail():
     assert 1 == 1
-    assert sailc.add(1, 2) == 3
+    assert sail.add(1, 2) == 3

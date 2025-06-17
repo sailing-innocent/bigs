@@ -24,7 +24,7 @@ from lib.vanilla_3dgs_render import render
 import logging
 
 # set logging level to error
-logging.getLogger().setLevel(logging.ERROR)
+# logging.getLogger().setLevel(logging.ERROR)
 logger = logging.getLogger(__name__)
 
 try:

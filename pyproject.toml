@@ -59,8 +59,4 @@ markers = [
 ]
 norecursedirs=[
     "data",
-    "samples"
-]
-pythonpaths = [
-    "."
 ]

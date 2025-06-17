@@ -1,3 +1,12 @@
-import os
+import logging
 
-print(os.environ.get("CUDA_HOME"))
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[logging.StreamHandler()],
+)
+logger = logging.getLogger(__name__)
+
+logger.info("Starting check.py script...")
+
+import lib.sail

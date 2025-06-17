@@ -1,0 +1,35 @@
+{
+    "folders": [
+        {
+            "path": "lib/tools"
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.tes": "glsl",
+            "*.tcs": "glsl",
+            "*.geom": "glsl",
+            "*.frag": "glsl",
+            "*.comp": "glsl",
+            "*.vert": "glsl",
+            "*.inl": "cpp",
+            "*.cu": "cpp",
+            "*.cuh": "cpp",
+            "*.inc": "cpp",
+            "plyconfig.json": "jsonc"
+        },
+        "editor.wordWrap": "on",
+        "editor.inlineSuggest.enabled": true,
+        "editor.accessibilitySupport": "off",
+        "editor.formatOnSave": true,
+        "terminal.integrated.persistentSessionReviveProcess": "never", // Do not restore terminal sessions on startup and update the PATH
+        "clangd.arguments": [
+            "--compile-commands-dir=${workspaceFolder}/.vscode",
+            "--header-insertion=never",
+            "--clang-tidy",
+            "--fallback-style=none",
+            "--enable-config",
+            "--cross-file-rename"
+        ],
+    }
+}

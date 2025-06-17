@@ -1,0 +1,20 @@
+CompileFlags:
+  Remove: -rdc=true
+  Add:
+    - --std=c++20
+    - --cuda-gpu-arch=sm_89
+    - --cuda-path=C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6
+    - -Wno-incomplete-base-class
+    - --compile-commands-dir=${workspaceFolder}/.vscode
+    - --background-index
+    - -j=12
+    - --clang-tidy
+    - --clang-tidy-checks=performance-*,bugprone-*
+    - --all-scopes-completion
+    - --completion-style=detailed
+    - --header-insertion=iwyu
+    - --pch-storage=disk
+Diagnostics:
+  Suppress:
+    - attribute_aligned_too_great
+    - drv_omp_offload_target_missingbcruntime

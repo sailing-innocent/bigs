@@ -3,7 +3,7 @@ name = "bigs"
 version = "0.1.0"
 description = "The Bayesian Inference Gaussian Splatting (BIGS) library"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "matplotlib>=3.10.3",
     "ninja>=1.11.1.4",
@@ -60,4 +60,7 @@ markers = [
 norecursedirs=[
     "data",
     "samples"
+]
+pythonpaths = [
+    "."
 ]

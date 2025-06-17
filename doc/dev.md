@@ -9,6 +9,7 @@
   - `uv pip install .\lib\simple_knn\ --no-build-isolation`
   - `uv pip install .\lib\vanilla_3dgs\ --no-build-isolation`
   - !Important `uv pip install .\lib\bigs\ --no-build-isolation` (Our Core Algorithm Implementation lives here!)
+  - (Optional) install sam2 `uv pip install <path_to_sam2>` and download pretrained model according to 
 
 ### Check Install Valid
 

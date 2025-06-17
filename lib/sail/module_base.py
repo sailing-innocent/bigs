@@ -9,7 +9,9 @@ logger.setLevel(logging.INFO)
 if not logger.handlers:
     console_handler = logging.StreamHandler(sys.stdout)
     console_handler.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter(
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    )
     console_handler.setFormatter(formatter)
     logger.addHandler(console_handler)
     # Prevent duplicate messages from parent loggers
@@ -30,7 +32,7 @@ class ModuleBase:
 
     def __init__(self, name: str, module_name: str, cwd: str):
         if not hasattr(self, "_initialized"):
-            print("ModuleBase init: initializing")
+            # print("ModuleBase init: initializing")
             self._name = name
             self._module_name = module_name
             self._cwd = cwd
@@ -42,7 +44,6 @@ class ModuleBase:
 
     def load_module(self):
         sys.path.append(self._cwd)
-        print("sys.path: {}".format(sys.path))
         try:
             self._module = importlib.import_module(self._module_name)
             logger.info("module {} loaded".format(self._module_name))

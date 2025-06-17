@@ -4,6 +4,8 @@ set_languages("c++20")
 
 add_requires("pybind11")
 add_requires("glfw")
+add_requires("imgui", {configs = {glfw= true,opengl3 = true}})
+add_requires("glm")
 
 if is_mode("debug") then
     set_targetdir("bin/debug")
@@ -19,10 +21,14 @@ end
 target("sailc")
     add_rules("python.library")
     set_basename("sailc")
+    
     add_packages("pybind11")
     add_packages("glfw")
+    add_packages("imgui")
+    add_packages("glm")
+
     add_includedirs("include", {public = true})
     set_kind("shared")
     set_extension(".pyd")
-    add_files("src/**.cpp", "src/**.cu")
+    add_files("src/**.cpp", "src/**.cu", "src/**.c")
 target_end()

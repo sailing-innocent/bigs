@@ -7,17 +7,15 @@
  */
 
 #include "GLFW/glfw3.h"
-#include "SailCu/config.h"
 #include "SailCu/util/shader/program.h"
 #include <memory>
-// INTEROP
 #include <cuda_gl_interop.h>
 #include <span>
 #include <array>
 
 namespace sail {
 
-class SAIL_API PointVisApp {
+class PointVisApp {
 public:
 	PointVisApp(std::string _title, unsigned int _resw, unsigned int _resh, bool cam_flip_y = true);
 	void init();
@@ -41,7 +39,7 @@ protected:
 	void create_vbo(GLuint* vbo, struct cudaGraphicsResource** vbo_res, unsigned int vbo_res_flags);
 	void delete_vbo(GLuint* vbo, struct cudaGraphicsResource* vbo_res);
 
-	std::unique_ptr<sail::cu::ShaderProgram> mp_shader_program;
+	std::unique_ptr<sail::ShaderProgram> mp_shader_program;
 	GLuint VAO, pos_vbo, color_vbo;
 	GLFWwindow* m_window;
 	std::string m_title;
@@ -57,13 +55,13 @@ protected:
 	bool m_cam_flip_y = false;
 };
 
-SAIL_CU_API void point_vis(
-	const float* d_pos,
-	const float* d_color,
-	const int num_points,
-	std::span<float> debug_lines,
-	float point_size = 10.0,
-	const unsigned int width = 800u,
-	const unsigned int height = 600u);
+// SAIL_CU_API void point_vis(
+// 	const float* d_pos,
+// 	const float* d_color,
+// 	const int num_points,
+// 	std::span<float> debug_lines,
+// 	float point_size = 10.0,
+// 	const unsigned int width = 800u,
+// 	const unsigned int height = 600u);
 
-}// namespace sail::cu
+}// namespace sail

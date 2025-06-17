@@ -1,4 +1,5 @@
 import lib.sail as sail
+import torch
 
 
 def test_sail():

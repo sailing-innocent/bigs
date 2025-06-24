@@ -42,6 +42,23 @@ def point_vis_impl(
     return func(*args)
 
 
+def gs_vis_impl(
+    d_pos, d_color, d_scale, d_rotq, num_points, debug_lines=[], width=800, height=600
+):
+    func = sail("gs_vis")
+    args = (
+        d_pos,
+        d_color,
+        d_scale,
+        d_rotq,
+        num_points,
+        debug_lines,
+        width,
+        height,
+    )
+    return func(*args)
+
+
 def point_vis(
     d_pos: torch.Tensor,
     d_color: torch.Tensor,
@@ -75,4 +92,30 @@ def point_vis(
         height,
         d_pos_stride,
         d_color_stride,
+    )
+
+
+def gs_vis(
+    d_pos: torch.Tensor,
+    d_color: torch.Tensor,
+    d_scale: torch.Tensor,
+    d_rotq: torch.Tensor,
+    debug_lines=[],
+    width=800,
+    height=600,
+):
+    # Check the size and device of pos and color
+    if not isinstance(d_pos, torch.Tensor) or not isinstance(d_color, torch.Tensor):
+        raise TypeError("d_pos and d_color must be torch tensors.")
+    num_points = d_pos.size(0)
+    # impl
+    gs_vis_impl(
+        d_pos.contiguous().data_ptr(),
+        d_color.contiguous().data_ptr(),
+        d_scale.contiguous().data_ptr(),
+        d_rotq.contiguous().data_ptr(),
+        num_points,
+        debug_lines,
+        width,
+        height,
     )

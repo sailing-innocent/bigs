@@ -52,14 +52,20 @@ void point_vis(
 }
 
 void gs_vis(
-	const float* d_pos,
-	const float* d_color,
-	const float* d_scale,
-	const float* d_rotq,
+	const int64_t d_pos,
+	const int64_t d_color,
+	const int64_t d_scale,
+	const int64_t d_rotq,
 	const int num_points,
-	std::span<float> debug_lines,
+	std::vector<float> debug_lines,
 	const unsigned int width = 800u,
 	const unsigned int height = 600u) {
+
+	float* d_pos_f = reinterpret_cast<float*>(d_pos);
+	float* d_color_f = reinterpret_cast<float*>(d_color);
+	float* d_scale_f = reinterpret_cast<float*>(d_scale);
+	float* d_rotq_f = reinterpret_cast<float*>(d_rotq);
+
 
 	// process lines
 	sail::GSVisApp app{
@@ -74,8 +80,8 @@ void gs_vis(
 	app.gen_data(num_points);
 	app.debug_lines(debug_lines);
 
-	app.bind_data(d_pos, d_color, num_points);
-	app.apply_transform(d_pos, d_scale, d_rotq, num_points);
+	app.bind_data(d_pos_f, d_color_f, num_points);
+	app.apply_transform(d_pos_f, d_scale_f, d_rotq_f, num_points);
 	while (!app.should_close()) {
 		app.update();
 	}

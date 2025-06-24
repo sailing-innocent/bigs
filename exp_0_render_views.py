@@ -24,6 +24,7 @@ logger = logging.getLogger(__name__)
 DEBUG_TOOLS_READY = False
 try:
     from lib.sail import point_vis
+    from lib.sail import gs_vis
 
     DEBUG_TOOLS_READY = True
 except ImportError:
@@ -77,7 +78,8 @@ def render_video(name: str, scene: str, debug: bool = False):
             logger.error("Debug tools are not ready. Cannot visualize points.")
             return
         points, colors, scales, rotqs = get_from_gs(gs)
-        point_vis(points, colors, debug_lines, 3.0, 1600, 900)
+        # point_vis(points, colors, debug_lines, 3.0, 1600, 900)
+        gs_vis(points, colors, scales, rotqs)
         return
 
 

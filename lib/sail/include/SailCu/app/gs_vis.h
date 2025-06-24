@@ -6,13 +6,12 @@
  * @date 2025-01-01
  */
 #include "GLFW/glfw3.h"
-#include "SailCu/config.h"
 #include <span>
 #include <SailCu/app/point_vis.h>
 
-namespace sail::cu {
+namespace sail {
 
-class SAIL_CU_API GSVisApp : public PointVisApp {
+class GSVisApp : public PointVisApp {
 public:
 	GSVisApp(std::string _title, unsigned int _resw, unsigned int _resh) : PointVisApp(_title, _resw, _resh) {};
 	void gen_data(const int num_points) override;
@@ -37,14 +36,14 @@ protected:
 	struct cudaGraphicsResource* d_cube_ebo_resource;
 };
 
-void SAIL_CU_API gs_vis(
-	const float* d_pos,
-	const float* d_color,
-	const float* d_scale,
-	const float* d_rotq,
-	const int num_points,
-	std::span<float> debug_lines,
-	const unsigned int width = 800u,
-	const unsigned int height = 800u);
+// void gs_vis(
+// 	const float* d_pos,
+// 	const float* d_color,
+// 	const float* d_scale,
+// 	const float* d_rotq,
+// 	const int num_points,
+// 	std::span<float> debug_lines,
+// 	const unsigned int width = 800u,
+// 	const unsigned int height = 800u);
 
-}// namespace sail::cu
+}// namespace sail

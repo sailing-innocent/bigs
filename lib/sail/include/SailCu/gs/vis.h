@@ -14,4 +14,4 @@ void expand_color(const float* d_color, float* d_expanded_color, int num_points)
 
 void point_bb_verts_transform(const float* d_scales, const float* d_rotations, const float* d_pos, float* d_verts, int num_points) noexcept;
 
-}// namespace sail::cu
+}// namespace sail

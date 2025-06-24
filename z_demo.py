@@ -11,7 +11,7 @@ from scene.cameras import get_lookat_cam
 import numpy as np 
 import torch 
 from config import get_reprod_config
-from module.vanilla_3dgs_render import render
+from lib.vanilla_3dgs_render import render
 from gaussian_featmark import gs_mark_debug, gs_mark
 from utils.image_utils import feat_to_color_img
 from utils.gaussian_utils import feat_to_color_gs 
@@ -19,7 +19,7 @@ from scene.gaussian_model import GaussianModel
 from utils.graphics_utils import BasicPointCloud, simple_sphere
 import matplotlib.pyplot as plt
 
-from cent.lib.sailtorch.point import point_vis
+from lib.sail import point_vis
 
 def demo_featmark(scene_name: str):
     config = get_reprod_config()
